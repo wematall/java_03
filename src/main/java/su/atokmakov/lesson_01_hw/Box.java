@@ -27,4 +27,8 @@ public class Box <T extends Fruit> {
             return list.size() * list.get(0).getWeight();
         }
     }
+
+    boolean compare(Box<? extends Fruit> box) {
+        return this.getWeight() == box.getWeight();
+    }
 }
