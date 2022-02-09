@@ -40,4 +40,13 @@ public class Box <T extends Fruit> {
         box.getList().addAll(list);
         list.clear();
     }
+
+    // some extra info with special method
+    void info() {
+        if (list.isEmpty()) {
+            System.out.println("Box is empty");
+        } else {
+            System.out.println("Box content: " + list.get(0).toString() + " Weight: " + list.size()*list.get(0).getWeight());
+        }
+    }
 }

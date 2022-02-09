@@ -30,6 +30,37 @@ public class Application {
 
         // Задание 3
         // Fruits and boxes
+        System.out.println("***************************");
+        System.out.println("***************************");
+
+        Apple apple   = new Apple();
+        Orange orange = new Orange();
+
+        Box<Apple> appleBox1 = new Box<>();
+        Box<Orange> orangeBox1 = new Box<>();
+        Box<Apple> appleBox2 = new Box<>();
+
+        for (int i = 0; i < 3; i++) {
+            appleBox1.add(new Apple());
+        }
+
+        for (int i = 0; i < 5; i++) {
+            orangeBox1.add(new Orange());
+        }
+
+        System.out.println("Weight of box oranges: " + orangeBox1.getWeight());
+        System.out.println("Weight of box apples: " + appleBox1.getWeight());
+
+        System.out.println("Compare boxes equal or not..." + appleBox1.compare(orangeBox1));
+
+        appleBox1.moveFruits(appleBox2);
+
+        System.out.println("Weight of box1 oranges" + appleBox1.getWeight());
+        System.out.println("Weight of box2 apples: " + appleBox2.getWeight());
+        // some extra info with special method
+        orangeBox1.info();
+        appleBox1.info();
+        appleBox2.info();
 
 
 
