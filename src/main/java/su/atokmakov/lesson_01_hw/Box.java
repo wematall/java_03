@@ -31,4 +31,13 @@ public class Box <T extends Fruit> {
     boolean compare(Box<? extends Fruit> box) {
         return this.getWeight() == box.getWeight();
     }
+
+    void add(T obj) {
+        list.add(obj);
+    }
+
+    void moveFruits(Box<T> box) {
+        box.getList().addAll(list);
+        list.clear();
+    }
 }
