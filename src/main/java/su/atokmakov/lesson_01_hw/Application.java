@@ -28,6 +28,9 @@ public class Application {
         System.out.println("After conversion");
         System.out.println(list.getClass());
 
+        // Задание 3
+        // Fruits and boxes
+
 
 
     }
