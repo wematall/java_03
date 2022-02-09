@@ -19,4 +19,12 @@ public class Box <T extends Fruit> {
     public List<T> getList() {
         return list;
     }
+
+    float getWeight() {
+        if (list.isEmpty()) {
+            return 0;
+        } else {
+            return list.size() * list.get(0).getWeight();
+        }
+    }
 }
